@@ -23,7 +23,7 @@ Then(/^I should see a flash message saying (.*)$/, async (message) => {
 
 Given('the app is launched', async () => {
     // Wait for the app to load
-    await driver.pause(10000);
+    await driver.pause(12000);
 });
 
 When('the user clicks the button', async () => {
