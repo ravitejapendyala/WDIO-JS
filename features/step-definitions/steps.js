@@ -34,11 +34,19 @@ When('the user clicks the button', async () => {
     //const signInButton = await $('android=new UiSelector().className("android.view.ViewGroup")');
     const signInButton = await $('android=new UiSelector().className("android.widget.TextView").text("Sign In")');
     await signInButton.click();
+    await driver.pause(5000);
 });
 
 Then('the result element should be displayed', async () => {
     // Verify the result element is displayed (change to your result element's ID)
-    const resultElement = await $('~result_element_id');
-    await expect(resultElement).toBeDisplayed();
+        const usernameField = await $('//android.widget.EditText[@hint="USERNAME"]');
+        await usernameField.waitForExist({ timeout: 5000 });
+        await usernameField.setValue('cdwmobileqa');
+        const PassowrdField = await $('//android.widget.EditText[@hint="PASSWORD"]');
+        await PassowrdField.waitForExist({ timeout: 5000 });
+        await PassowrdField.setValue('blu');
+        const signIn_btn = await $('android=new UiSelector().className("android.widget.Button")');
+        await PassowrdField.waitForExist({ timeout: 5000 });
+        await signIn_btn.click();
 });
 

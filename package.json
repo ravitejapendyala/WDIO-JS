@@ -19,5 +19,8 @@
   },
   "scripts": {
     "test": "wdio run ./wdio.conf.js"
+  },
+  "dependencies": {
+    "appium": "^2.5.4"
   }
 }

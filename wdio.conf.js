@@ -55,7 +55,7 @@ export const config = {
         platformName: 'Android',        
         'appium:deviceName': 'emulator-5554',
         // 'appium:app': 'C:\\Users\\1021285\\OneDrive - Blue Yonder\\Personal\\JavaProjects\\AppiumFramework\\src\\main\\resources\\Rubi.apk',        
-        'appium:app': './App/ApiDemos-debug.apk',        
+        'appium:app': './App/Rubi.apk',        
         'appium:automationName': 'UiAutomator2'
     }],
 
