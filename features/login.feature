@@ -12,8 +12,13 @@ Feature: The Internet Guinea Pig Website
   #     | foobar   | barfoo               | Your username is invalid!      |
   
 
-  Scenario: User opens app and clicks a button
+  Scenario: User opens Ruby app and signon
     Given the app is launched
     When the user clicks the button
     Then the result element should be displayed
+  
+  @ApiDemosFirstTest
+  Scenario: User opens ApiDemos app
+    Given the app is launched
+    
 
