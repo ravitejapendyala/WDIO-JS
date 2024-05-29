@@ -1,5 +1,6 @@
 Feature: The Internet Guinea Pig Website
 
+@webdefault
   # Scenario Outline: As a user, I can log into the secure area
 
   #   Given I am on the login page
@@ -20,5 +21,7 @@ Feature: The Internet Guinea Pig Website
   @ApiDemosFirstTest
   Scenario: User opens ApiDemos app
     Given the app is launched
+    When I Click on app
+    Then Action option should be displayed
     
 

@@ -50,3 +50,18 @@ Then('the result element should be displayed', async () => {
         await signIn_btn.click();
 });
 
+Then('Action option should be displayed', async() => {
+  const actionBar = await $('~Action Bar');
+  await expect(actionBar).toBeExisting();
+})
+
+When('I Click on app', async() => {
+  // Write code here that turns the phrase above into concrete actions
+
+    const appOption = await $('~App');
+    await appOption.click();
+    await driver.pause(5000);
+})
+
+
+
