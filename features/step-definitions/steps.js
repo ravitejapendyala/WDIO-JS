@@ -80,6 +80,25 @@ When(`I Navigate to {string}`, async (controlName) => {
         await alertDialogsButton.click();
         await driver.pause(5000);
     }
+    else if(controlName == "List dialog"){
+        //
+     const listDialog = await $('//android.widget.Button[@resource-id="io.appium.android.apis:id/select_button"]');
+     await listDialog.click();
+    }
+    else if(controlName == "Command two"){
+        //
+     driver.pause(2000);
+        const commandTwo = await $('//android.widget.TextView[@text="Command two"]');
+     await commandTwo.click();
+    }
+});
+
+Then(`I get text from option selected`, async () => {
+    
+    const optionText = await $('id:android:id/message');
+    const optionValue = await optionText.getText();
+    //expect(optionValue.toHaveText("You selected: 1 , Command two"));
+    console.log("option selected is : "+optionValue);
 });
 
 

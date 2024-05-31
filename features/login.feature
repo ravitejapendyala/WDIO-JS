@@ -34,6 +34,8 @@ Feature: The Internet Guinea Pig Website
     Given the app is launched
     When I Click on app
     And I Navigate to 'Alert Dialogs'
-    #And I Navigate to 'something'
+    And I Navigate to 'List dialog'
+    And I Navigate to 'Command two'
+    Then I get text from option selected
     
 
