@@ -53,7 +53,7 @@ export const config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',        
-        'appium:deviceName': 'emulator-5554',
+        'appium:avd': 'Pixel_7_Pro',
         // 'appium:app': 'C:\\Users\\1021285\\OneDrive - Blue Yonder\\Personal\\JavaProjects\\AppiumFramework\\src\\main\\resources\\Rubi.apk',        
         'appium:app': './App/ApiDemos-debug.apk',        
         'appium:automationName': 'UiAutomator2'

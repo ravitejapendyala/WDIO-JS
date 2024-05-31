@@ -19,14 +19,21 @@ Feature: The Internet Guinea Pig Website
     Then the result element should be displayed
   
   @ApiDemosFirstTest
-  Scenario: User opens ApiDemos app
+  Scenario: User verifies Action option displayed
     Given the app is launched
     When I Click on app
     Then Action option should be displayed
   
   @FindElementByClass
-  Scenario: User opens ApiDemos app
+  Scenario: User identifies element by ClassName
     Given the app is launched
     When I get text from first element by className  
+  
+  @FullNavigation
+  Scenario: User verifies 
+    Given the app is launched
+    When I Click on app
+    And I Navigate to 'Alert Dialogs'
+    #And I Navigate to 'something'
     
 

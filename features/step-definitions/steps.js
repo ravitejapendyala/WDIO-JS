@@ -74,4 +74,13 @@ When(`I get text from first element by className`, async() => {
 });
 
 
+When(`I Navigate to {string}`, async (controlName) => {
+    if(controlName == "Alert Dialogs"){
+        const alertDialogsButton = await $('//android.widget.TextView[@content-desc="Alert Dialogs"]'); // Replace with actual selector
+        await alertDialogsButton.click();
+        await driver.pause(5000);
+    }
+});
+
+
 
