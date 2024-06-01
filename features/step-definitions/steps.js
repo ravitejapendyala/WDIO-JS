@@ -87,7 +87,7 @@ When(`I Navigate to {string}`, async (controlName) => {
     }
     else if(controlName == "Command two"){
         //
-     driver.pause(2000);
+     driver.pause(3000);
         const commandTwo = await $('//android.widget.TextView[@text="Command two"]');
      await commandTwo.click();
     }
