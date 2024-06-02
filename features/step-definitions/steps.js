@@ -97,7 +97,7 @@ Then(`I get text from option selected`, async () => {
     
     const optionText = await $('id:android:id/message');
     const optionValue = await optionText.getText();
-    //expect(optionValue.toHaveText("You selected: 1 , Command two"));
+    expect(optionValue.toHaveText("You selected: 1 , Command two"));
     console.log("option selected is : "+optionValue);
 });
 
