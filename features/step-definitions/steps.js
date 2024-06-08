@@ -35,7 +35,7 @@ When('the user clicks the button', async () => {
     //const signInButton = await $('android=new UiSelector().className("android.view.ViewGroup")');
     const signInButton = await $('android=new UiSelector().className("android.widget.TextView").text("Sign In")');
     await signInButton.click();
-    await driver.pause(5000);
+    await driver.pause(6000);
 });
 
 Then('the result element should be displayed', async () => {
