@@ -61,7 +61,7 @@ When('I Click on app', async() => {
 
     const appOption = await $('~App');
     await appOption.click();
-    await driver.pause(5000);
+    await driver.pause(6000);
 })
 
 When(`I get text from first element by className`, async() => {
